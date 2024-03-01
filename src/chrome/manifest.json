@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "GFY dir.bg",
+  "version": "0.0.11",
+  "description": "Fully encode an URL or text in &#<decimal code>; a.k.a. HTML entities: https://developer.mozilla.org/en-US/docs/Glossary/Entity",
+  
+  "icons": {
+    "16": "icons/icon-16x16.png",
+    "32": "icons/icon-32x32.png",
+    "48": "icons/icon-48x48.png",
+    "96": "icons/icon-96x96.png",
+    "128": "icons/icon-128x128.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "clipboardWrite"
+  ],
+
+  "action": {
+    "default_title": "To entities",
+    "default_popup": "popup/index.html",
+    "default_icon": {
+      "16": "icons/icon-16x16.png",
+      "32": "icons/icon-32x32.png",
+      "48": "icons/icon-48x48.png",
+      "96": "icons/icon-96x96.png",
+      "128": "icons/icon-128x128.png"
+    }
+  },
+
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["scripts/index.js"]
+  }]
+
+  }
+

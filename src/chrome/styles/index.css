@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #555555;
+}
+
+.popup-container {
+    content: "";
+    width: 20rem;
+    background-color: #959595;
+    padding: 0 0.125rem 0.125rem 0.125rem;
+    font-family: "Roboto", "Ariel"; 
+    font-size: 1rem;
+    /* display: flexbox;
+    flex-direction: column; */
+    border-radius: 0.1875rem;
+}
+
+.input-text{
+    display: block;
+    background-color: #ececec;
+    color: #5e5e5e;
+    /* margin-bottom: 0.125rem; */
+    width: 100%;
+    border: solid 0.125rem;
+    border-color: white;
+    border-radius: 0.125rem;
+    padding: 0.3125rem 0.625rem;
+    margin: 0.125rem 0;
+    transition: 0.2s
+}
+
+.input-text:focus {
+    outline: none;
+    width: 100%;
+    border: solid 0.125rem;
+    border-color: white;
+    background-color: white;
+    box-shadow: inset 0 0 0.25rem #0055ff;
+  }
+
+.input-text:hover::placeholder {
+    color: #555555;
+}
+
+button {
+    background-color: white;
+    color: #0055ff;
+    text-decoration: none;
+    width: 100%;
+    border: none;
+    border-radius: 0.125rem;
+    padding: 0.3125rem 0.625rem;
+    font-weight: 600;
+}
+
+button:hover,
+    button:focus {
+    cursor: pointer;
+}
