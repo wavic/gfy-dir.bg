@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "GFY dir.bg",
-  "version": "0.0.11",
+  "version": "0.0.13",
   "description": "Fully encode an URL or text in &#<decimal code>; a.k.a. HTML entities: https://developer.mozilla.org/en-US/docs/Glossary/Entity",
   
   "icons": {
