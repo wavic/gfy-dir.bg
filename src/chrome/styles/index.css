@@ -8,7 +8,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #555555;
+    background: linear-gradient(white 0%, white 33.33%,
+        #009764 33.33%, #009764 66.66%,
+        #d7210a 66.66%, #d7210a 100%);
 }
 
 .popup-container {
